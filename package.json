@@ -1,0 +1,23 @@
+{
+  "name": "selfreactcomponents",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feiyanggeng/selfReactComponents.git"
+  },
+  "author": "gengfeiyang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/feiyanggeng/selfReactComponents/issues"
+  },
+  "homepage": "https://github.com/feiyanggeng/selfReactComponents#readme",
+  "devDependencies": {
+    "webpack": "^5.11.0",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
