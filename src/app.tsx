@@ -2,25 +2,23 @@ interface IProps {
   value: string
 }
 
-const test = {
-  a: 1
-};
-
 class App extends React.Component<IProps>{
 
   constructor(props: IProps) {
     super(props);
-    console.log(_.get(test, 'a'));
-    this.state = {}
+    this.state = {};
   }
 
-  private getName = (str: string): React.ReactNode => {
+  private getName = (): React.ReactNode => {
     const { value } = this.props;
-    return value
+    return value;
   }
 
   public render(): React.ReactNode{
-    return <div>{ this.getName('app') }</div>;
+    return <div>
+      <h3>app</h3>
+      {this.getName()}
+    </div>;
   }
 }
 
