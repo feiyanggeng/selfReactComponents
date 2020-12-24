@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "es5",                      
+    "module": "commonjs",
+    "allowJs": true,                       
+    "checkJs": true, 
+    "jsx": "react",
+    "baseUrl": "./src",
+    "rootDir": "./src",
+    "esModuleInterop": true
+  },
+  "include": ["./typings/*","./src/*"]
+}
