@@ -17,6 +17,8 @@ class App extends React.Component<IProps>{
   }
 
   public render(): React.ReactNode{
+    console.log(this.context);
+    
     return <div>
       <h3>app</h3>
       {this.getName()}

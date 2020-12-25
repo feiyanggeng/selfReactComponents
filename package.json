@@ -24,7 +24,7 @@
   },
   "lint-staged": {
     "linters": {
-        "**/*.js": ["eslint --fix", "git add"]
+        "**/*.tsx": ["eslint --fix", "git add"]
     },
     "ignore": ["**/{dist,build}/**/*.js", "**/*.min.js"]
   },

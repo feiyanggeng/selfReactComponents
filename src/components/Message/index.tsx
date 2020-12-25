@@ -7,7 +7,12 @@ class Message extends React.PureComponent<IProps> {
     super(props);
   }
 
+  protected renderContent():React.ReactNode {
+    return <div>renderContent{ this.context.name}</div>;
+  }
+
   public render(): React.ReactNode {
+    
     return <div>Message</div>;
   }
 }
