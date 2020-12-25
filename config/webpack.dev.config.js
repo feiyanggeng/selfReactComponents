@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 
 const htmlWebpackPlugin = new HtmlWebpackPlugin({
-  template: path.resolve(__dirname, '../src/index.html');
+  template: path.resolve(__dirname, '../src/index.html')
 });
 
 const providePlugin = new webpack.ProvidePlugin({
@@ -31,5 +31,9 @@ module.exports = {
   plugins: [htmlWebpackPlugin, providePlugin],
   resolve: {
     extensions: [".js", ".jsx", ".ts", ".tsx"],
+    alias: {
+      src: path.resolve("src"),
+      components: path.resolve("src/components"),
+    },
   },
 };

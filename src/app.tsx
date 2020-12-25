@@ -1,3 +1,5 @@
+import MyMessage from "components/MyMessage";
+
 interface IProps {
   value: string
 }
@@ -18,6 +20,7 @@ class App extends React.Component<IProps>{
     return <div>
       <h3>app</h3>
       {this.getName()}
+      <MyMessage />
     </div>;
   }
 }

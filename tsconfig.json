@@ -6,8 +6,12 @@
     "checkJs": true, 
     "jsx": "react",
     "baseUrl": "./src",
-    "rootDir": "./src",
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "paths": {
+      "components/*": [
+        "components/*"
+      ]
+    }
   },
-  "include": ["./typings/*","./src/*"]
+  "include": ["./typings/*","./src/**/*"]
 }
