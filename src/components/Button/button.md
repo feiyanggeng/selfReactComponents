@@ -25,6 +25,7 @@ this is button page
   return (<>
     <button onClick={() => setCount(count + 1)}>+1</button>
     <p>{count}</p>
+    <button onClick={() => setCount(count - 1)}>-1</button>
   </>)
 }}
 </Playground>

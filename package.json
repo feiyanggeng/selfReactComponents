@@ -8,12 +8,12 @@
     "start": "webpack-dev-server --config ./config/webpack.dev.config.js --open",
     "docz:dev": "docz dev",
     "docz:build": "docz build",
-    "docz:serve": "docz build && docz serve"
+    "docz:serve": "docz build && docz serve",
+    "eslint:fix": "eslint --fix ./src"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/feiyanggeng/selfReactComponents.git",
-    "eslint:fix": "eslint --fix ./src"
+    "url": "git+https://github.com/feiyanggeng/selfReactComponents.git"
   },
   "author": "gengfeiyang",
   "license": "MIT",
@@ -58,6 +58,7 @@
     "eslint-plugin-react": "^7.21.5",
     "eslint-plugin-react-hooks": "^4.2.0",
     "html-webpack-plugin": "^4.5.0",
+    "husky": "^4.3.6",
     "lint-staged": "^10.5.3",
     "lodash": "^4.17.20",
     "typescript": "^4.1.3",

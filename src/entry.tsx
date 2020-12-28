@@ -2,7 +2,7 @@ import App from "./app";
 
 const Context = React.createContext({});
 
-function TestContext(props: { value: any, children?: React.ReactNode }) {
+function TestContext(props: { value, children?: React.ReactNode }) {
   const { value, children } = props;
   return <Context.Provider value={value}>
     <Context.Consumer>
