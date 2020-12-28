@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "test",
-    "start": "webpack-dev-server --config ./config/webpack.dev.config.js --open"
+    "start": "webpack-dev-server --config ./config/webpack.dev.config.js --open",
+    "docz:dev": "docz dev",
+    "docz:build": "docz build",
+    "docz:serve": "docz build && docz serve"
   },
   "repository": {
     "type": "git",
@@ -24,9 +27,15 @@
   },
   "lint-staged": {
     "linters": {
-        "**/*.tsx": ["eslint --fix", "git add"]
+      "**/*.tsx": [
+        "eslint --fix",
+        "git add"
+      ]
     },
-    "ignore": ["**/{dist,build}/**/*.js", "**/*.min.js"]
+    "ignore": [
+      "**/{dist,build}/**/*.js",
+      "**/*.min.js"
+    ]
   },
   "homepage": "https://github.com/feiyanggeng/selfReactComponents#readme",
   "devDependencies": {
@@ -34,6 +43,7 @@
     "@babel/preset-env": "^7.12.11",
     "@babel/preset-react": "^7.12.10",
     "@babel/preset-typescript": "^7.12.7",
+    "@mdx-js/loader": "^1.6.22",
     "@types/lodash": "^4.14.165",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
@@ -56,6 +66,7 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
+    "docz": "^2.3.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   }

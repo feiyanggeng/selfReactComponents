@@ -26,6 +26,11 @@ module.exports = {
         exclude: /node_modules/,
         use: ["babel-loader", "eslint-loader"],
       },
+      {
+        test: /\.(md|mdx)$/,
+        exclude: /node_modules/,
+        use: ["babel-loader", "@mdx-js/loader"]
+      }
     ],
   },
   plugins: [htmlWebpackPlugin, providePlugin],
