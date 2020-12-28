@@ -8,10 +8,10 @@ import { Playground, Props } from "docz";
 
 # Button
 
-### Button Props ##
+## Button Props ##
 <Props of={Button} />
 
-### Button example ###
+## Button example ##
 
 this is button page
 <Playground>
