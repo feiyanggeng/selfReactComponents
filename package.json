@@ -25,18 +25,6 @@
       "pre-commit": "lint-staged"
     }
   },
-  "lint-staged": {
-    "linters": {
-      "**/*.tsx": [
-        "eslint --fix",
-        "git add"
-      ]
-    },
-    "ignore": [
-      "**/{dist,build}/**/*.js",
-      "**/*.min.js"
-    ]
-  },
   "homepage": "https://github.com/feiyanggeng/selfReactComponents#readme",
   "devDependencies": {
     "@babel/core": "^7.12.10",
