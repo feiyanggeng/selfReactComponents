@@ -17,3 +17,14 @@ this is button page
 <Playground>
   <Button />
 </Playground>
+
+## Counter ##
+<Playground>
+{() => {
+  const [count, setCount] = React.useState(0)
+  return (<>
+    <button onClick={() => setCount(count + 1)}>+1</button>
+    <p>{count}</p>
+  </>)
+}}
+</Playground>
