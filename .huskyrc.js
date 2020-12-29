@@ -1,5 +1,5 @@
 module.exports = {
   hooks: {
-    "pre-commit": "npm run eslint:fix",
+    "pre-commit": "lint-staged",
   },
 };
