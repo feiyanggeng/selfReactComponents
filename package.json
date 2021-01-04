@@ -4,12 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "test",
     "start": "webpack-dev-server --config ./config/webpack.dev.config.js --open",
     "docz:dev": "docz dev",
     "docz:build": "docz build",
     "docz:serve": "docz build && docz serve",
-    "eslint:fix": "eslint --fix ./src"
+    "eslint:fix": "eslint --fix ./src",
+    "test": "jest",
+    "test:watch": "jest --watch",   
+    "test:coverage": "jest --coverage",    
+    "test:update": "jest --updateSnapshot"  
   },
   "repository": {
     "type": "git",

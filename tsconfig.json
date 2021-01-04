@@ -13,5 +13,6 @@
       ]
     }
   },
-  "include": ["./typings/*","./src/**/*"]
+  "include": ["./typings/*","./src/**/*"],
+  "exclude": ["./src/**/__tests__"]
 }
