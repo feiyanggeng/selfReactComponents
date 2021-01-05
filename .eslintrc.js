@@ -32,5 +32,6 @@ module.exports = {
     "no-var": "error",
     // 优先使用 interface 而不是 type
     "@typescript-eslint/consistent-type-definitions": ["error", "interface"],
+    "@typescript-eslint/no-explicit-any": "off",
   },
 };

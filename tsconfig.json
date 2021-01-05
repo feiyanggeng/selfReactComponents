@@ -11,7 +11,15 @@
       "components/*": [
         "components/*"
       ]
-    }
+    },
+    "plugins": [
+      { 
+        "name": "typescript-plugin-css-modules", 
+        "options": {
+            "customMatcher": "\\.(c|le||lle|sa|sc)ss$"
+        } 
+      }
+    ]
   },
   "include": ["./typings/*","./src/**/*"],
   "exclude": ["./src/**/__tests__"]

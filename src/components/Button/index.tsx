@@ -1,4 +1,4 @@
-import React from "react";
+import ButtonLess from "./button.less";
 
 interface ButtonProps {
   className?: string,
@@ -11,7 +11,12 @@ class Button extends React.PureComponent<ButtonProps> {
   }
 
   public render(): React.ReactNode {
-    return <button>按钮</button>;
+    const { className } = this.props;
+    console.log('button',ButtonLess);
+    
+    return (<div className={ButtonLess.container}>
+        <button className={ className }>按钮</button>
+      </div>);
   }
 }
 

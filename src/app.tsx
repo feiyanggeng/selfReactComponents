@@ -1,3 +1,4 @@
+import Button from "components/Button";
 import MyMessage from "components/MyMessage";
 
 interface IProps {
@@ -22,6 +23,7 @@ class App extends React.Component<IProps>{
     return <div>
       <h3>app</h3>
       {this.getName()}
+      <Button type="dash"/>
       <MyMessage />
     </div>;
   }
