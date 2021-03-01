@@ -34,6 +34,10 @@ module.exports = {
         use: ["babel-loader", "eslint-loader"],
       },
       {
+        test: /\.svg$/,
+        use: ["@svgr/webpack"],
+      },
+      {
         test: /\.(md|mdx)$/,
         exclude: /node_modules/,
         use: ["babel-loader", "@mdx-js/loader"],
@@ -60,8 +64,8 @@ module.exports = {
           {
             loader: "less-loader",
             options: {
-              javascriptEnabled: true
-            }
+              javascriptEnabled: true,
+            },
           },
         ],
       },
@@ -79,7 +83,12 @@ module.exports = {
     extensions: [".js", ".jsx", ".ts", ".tsx"],
     alias: {
       src: path.resolve("src"),
+      utils: path.resolve("src/utils"),
       components: path.resolve("src/components"),
     },
+  },
+  devServer: {
+    host: "0.0.0.0",
+    port: "8088",
   },
 };

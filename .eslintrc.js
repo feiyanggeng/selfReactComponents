@@ -24,7 +24,6 @@ module.exports = {
       jsx: true,
     },
   },
-  // 自定义规则列表
   rules: {
     // 强制在每个语句后面使用分号
     semi: [1, "always"],

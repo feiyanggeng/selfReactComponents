@@ -1,3 +1,4 @@
+import { combineClassNames } from "utils";
 import ButtonLess from "./button.less";
 
 interface ButtonProps {
@@ -11,11 +12,9 @@ class Button extends React.PureComponent<ButtonProps> {
   }
 
   public render(): React.ReactNode {
-    const { className } = this.props;
-    console.log('button',ButtonLess);
-    
-    return (<div className={ButtonLess.container}>
-        <button className={ className }>按钮</button>
+    const { type, children, className } = this.props;
+    return (<div className={combineClassNames(ButtonLess.container, ButtonLess[type], className)}>
+      {children || "button"}
       </div>);
   }
 }

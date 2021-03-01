@@ -7,10 +7,11 @@
     "jsx": "react",
     "baseUrl": "./src",
     "esModuleInterop": true,
+    "noImplicitAny": true,
     "paths": {
       "components/*": [
         "components/*"
-      ]
+      ],
     },
     "plugins": [
       { 
@@ -22,5 +23,5 @@
     ]
   },
   "include": ["./typings/*","./src/**/*"],
-  "exclude": ["./src/**/__tests__"]
+  "exclude": ["./src/**/__tests__","./icons-svg"]
 }
